@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            padding: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Sample Page</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Video Section</h2>
+            <video controls width="600">
+                <source src="E:\Web Show\Asur\Season 2\Asur.S02E01.The.Dance.of.Death.480p.JC.WEB-DL.Hindi.DD5.1.H.264-.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section>
+            <h2>Form Section</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="hr">HR</option>
+                    <option value="it">IT</option>
+                    <option value="finance">Finance</option>
+                </select><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>User Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="C:\Users\Asus\Downloads\DSC_2710 (1).jpg" alt="User 1"></td>
+                        <td>Shreyas Wadhankar</td>
+                        <td>wadhankarshreyas@example.com</td>
+                        <td>IT</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td><img src="C:\Users\Asus\Downloads\IMG-20221128-WA0000 (1).jpg" alt="User 2"></td>
+                        <td>Pranil Deshmukh</td>
+                        <td>pdeshmukh@example.com</td>
+                        <td>HR</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td><img src="D:\Kedarkantha 2022\Canon EOS 200D\20220312094909_IMG_1581.JPG" alt="User 3"></td>
+                        <td>Vedant Patil</td>
+                        <td>vpatil@example.com</td>
+                        <td>Finance</td>
+                        <td>Male</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
